@@ -1,8 +1,11 @@
+import os
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-app = FastAPI()
+ENV = os.getenv("APP_ENV", "dev")
+
+app = FastAPI(title=f"MyApp ({ENV})")
 
 # Static folders
 app.mount("/css", StaticFiles(directory="css"), name="css")
