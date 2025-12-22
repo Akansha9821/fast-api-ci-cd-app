@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  app-dev:
+    build: .
+    env_file:
+      - .env.dev
+    ports:
+      - "8001:8000"
+    container_name: fastapi-dev
+
+  app-test:
+    build: .
+    env_file:
+      - .env.test
+    ports:
+      - "8002:8000"
+    container_name: fastapi-test
+
+  app-prod:
+    build: .
+    env_file:
+      - .env.prod
+    ports:
+      - "8000:8000"
+    container_name: fastapi-prod
