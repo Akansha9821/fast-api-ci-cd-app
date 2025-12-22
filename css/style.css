@@ -1,0 +1,75 @@
+/* GLOBAL */
+body {
+  background-color: #ffffff;
+}
+
+/* HEADER */
+.header {
+  background-color: #e9ecef; /* light grey */
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  background-color: #ffffff;
+  min-height: 70vh; /* EXTRA LARGE HEIGHT */
+  padding: 60px 0;
+}
+
+/* CARDS */
+.exam-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #e9ecef; /* light grey */
+  border-top: 1px solid #dee2e6;
+}
+
+.footer h6 {
+  font-weight: 600;
+}
+
+.footer a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #0d6efd;
+}
+
+.footer-bottom {
+  border-top: 1px solid #dee2e6;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.navbar-nav .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+
+.navbar-nav .nav-link img {
+    margin-bottom: 4px;
+  }
+
+.exam-card p {
+  font-size: 15px;
+  color: #333;
+  font-weight: 900;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding-left: 12px;
+  border-left: 4px solid grey; /* Bootstrap primary */
+}
